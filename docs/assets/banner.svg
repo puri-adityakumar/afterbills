@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title description">
+  <title id="title">AfterBills. Your balance isn't your budget.</title>
+  <desc id="description">Read-only planning for Solana USDC. Illustrative sample: 1,200 balance minus 770 in bills and 150 reserve leaves 280. An expected 800 invoice is not included.</desc>
+  <rect width="1600" height="640" fill="#F5F8FA"/>
+  <path d="M0 0H1600" stroke="#224B8F" stroke-width="12"/>
+  <g font-family="Instrument Sans, Arial, sans-serif">
+    <rect x="72" y="64" width="48" height="48" rx="10" fill="#224B8F"/>
+    <path d="M85 97L96 78L107 97M89 91H103" fill="none" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="137" y="99" fill="#17252C" font-size="33" font-weight="700" letter-spacing="-1">AfterBills</text>
+    <text x="72" y="199" fill="#52636B" font-size="16" font-weight="600" letter-spacing="3">READ-ONLY · SOLANA USDC</text>
+    <text x="68" y="289" fill="#17252C" font-size="76" font-weight="600" letter-spacing="-3">Your balance</text>
+    <text x="68" y="375" fill="#17252C" font-size="76" font-weight="600" letter-spacing="-3">isn't your budget.</text>
+    <text x="72" y="440" fill="#52636B" font-size="24">Bills first. A buffer next. Then the amount left.</text>
+    <path d="M72 486H721" stroke="#CFD8DC"/>
+    <text x="72" y="529" fill="#224B8F" font-size="18" font-weight="600">No signatures.</text>
+    <text x="242" y="529" fill="#224B8F" font-size="18" font-weight="600">No transfers.</text>
+    <text x="395" y="529" fill="#224B8F" font-size="18" font-weight="600">No unpaid income counted.</text>
+    <rect x="825" y="64" width="703" height="512" rx="18" fill="#FFF" stroke="#CFD8DC"/>
+    <text x="867" y="115" fill="#52636B" font-size="15" font-weight="600" letter-spacing="2">THE MONEY ALREADY HERE</text>
+    <text x="867" y="170" fill="#17252C" font-size="22">Observed balance</text>
+    <text x="1486" y="170" text-anchor="end" fill="#17252C" font-size="24" font-weight="600">1,200</text>
+    <text x="867" y="215" fill="#52636B" font-size="22">Listed bills</text>
+    <text x="1486" y="215" text-anchor="end" fill="#52636B" font-size="24">− 770</text>
+    <text x="867" y="260" fill="#52636B" font-size="22">Planning reserve</text>
+    <text x="1486" y="260" text-anchor="end" fill="#52636B" font-size="24">− 150</text>
+    <path d="M867 290H1486" stroke="#224B8F" stroke-width="3"/>
+    <text x="867" y="335" fill="#224B8F" font-size="16" font-weight="600" letter-spacing="2">AFTER BILLS &amp; RESERVE</text>
+    <text x="864" y="422" fill="#17252C" font-size="88" font-weight="600" letter-spacing="-4">280</text>
+    <text x="1049" y="417" fill="#52636B" font-size="23">USDC</text>
+    <text x="1486" y="408" text-anchor="end" fill="#224B8F" font-size="20" font-weight="600">20 / day · 14 days</text>
+    <path d="M867 449H1486" stroke="#CFD8DC" stroke-dasharray="5 6"/>
+    <text x="867" y="490" fill="#52636B" font-size="20">800 expected from a client</text>
+    <text x="1486" y="490" text-anchor="end" fill="#805E13" font-size="17" font-weight="600">NOT INCLUDED</text>
+    <text x="867" y="541" fill="#52636B" font-size="14">Illustrative sample · devnet test money · not financial advice</text>
+  </g>
+</svg>

@@ -1,8 +1,10 @@
 # AfterBills checkpoint package
 
-Checkpoint checklist, updated 2026-11-01. Working local app built and tested; code
-repository linked below. No hackathon submission or public app deployment.
-See `VALIDATION.md` for actual evidence.
+Checkpoint checklist, updated 2026-11-01. Working app built and tested; GitHub
+`main` is published. The user authorized Vercel deployment, but linking the
+repository was rejected by Vercel's repository-access check. No public app
+deployment or hackathon submission is claimed. See `VALIDATION.md` for evidence
+and `SUBMISSION.md` for the paste-ready description and current form links.
 
 ## 1. Deadline and form
 
@@ -16,11 +18,11 @@ claiming that the screenshot marks every field mandatory.
 
 | Field | Planned content | Current status / gate |
 |---|---|---|
-| Submission details | Problem, actual work, process, meaningful Solana use, limitations, next steps | Local implementation narrative below; not submitted |
+| Submission details | Problem, actual work, process, meaningful Solana use, limitations, next steps | Ready in [SUBMISSION.md](SUBMISSION.md); not submitted |
 | Code link | New AfterBills repository with actual code and setup README | [GitHub source repository](https://github.com/puri-adityakumar/afterbills) |
-| Demo video | 2-4 minutes showing sample vs real reads and working product | Not recorded/uploaded |
-| Live demo | Public working app, devnet + explicit sample mode | App built locally; public deployment needs authorization |
-| Presentation | Six-slide pitch with honest screenshots/status | Outline below only; not rendered/uploaded |
+| Demo video | 2-4 minutes showing sample vs real reads and working product | Deferred by the user; not recorded/uploaded |
+| Live demo | Public working app, devnet + explicit sample mode | Deployment authorized; Vercel GitHub repository access blocks project creation |
+| Presentation | Six-slide pitch with honest screenshots/status | Deferred by the user; outline only, not rendered/uploaded |
 
 Submit under **Best Consumer App on Solana**. Do not associate x402/Aurora merely
 because they were researched; their working integrations are not in this scope.
@@ -48,7 +50,7 @@ change and call it a blockchain settlement. Receipt matching is a later feature.
 | Failure behavior | Stale/timeout/zero screenshots and corresponding tests | Core browser flows pass; expanded results in `VALIDATION.md` |
 | Responsive UX | Desktop and 390px screenshots; keyboard/reduced-motion checks | Production Chromium desktop/mobile captures and checks |
 | Production build | Exact build/lint/typecheck/e2e results | Build/lint/types pass; see current browser results |
-| Public app | User-authorized URL tested in a clean browser | Not deployed |
+| Public app | User-authorized URL tested in a clean browser | Authorized, blocked by Vercel repository access; no URL |
 | Code | User-authorized repository URL and accurate setup instructions | [GitHub repository](https://github.com/puri-adityakumar/afterbills), with setup README |
 | Recording/deck | Real artifact paths and accessible published links | Not created |
 
@@ -57,17 +59,12 @@ Do not publish private client names, invoices, bills, API keys, or device data.
 
 ## 4. Submission narrative
 
-### Accurate implementation summary
+### Ready-to-paste description
 
-> AfterBills is a working local, read-only cash-flow planner for freelancers paid
-> in Solana USDC. It separates observed token funds from uncertain invoices,
-> reserves dated bills and a planning buffer, and previews purchases without
-> moving money. Users can try a visibly fictional sample or watch a public devnet
-> address. Exact bigint calculations, profile isolation, storage errors, stale
-> reads, and responsive flows are tested. A genuine finalized devnet token read
-> has been recorded through the adapter and complete API route. Financial notes
-> stay in browser storage. Public deployment, video, presentation rendering, and
-> verified receipt matching are not complete.
+Use [SUBMISSION.md](SUBMISSION.md), which includes the full implementation
+narrative, process, actual Solana integration, validation, and remaining limits.
+The source is published. Public Vercel deployment is authorized but blocked;
+video and presentation are explicitly deferred. Do not describe these as complete.
 
 ### Structure after implementation
 

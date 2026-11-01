@@ -70,6 +70,17 @@ The fictional sample's 1,200 USDC is separate from this real observation.
 
 ## Screenshot and audit evidence
 
+Repository documentation refreshed on 2026-11-01. The tracked images in
+`docs/assets/` are real production-build captures of the fictional sample:
+landing, desktop dashboard, 180 USDC purchase preview, and 390px mobile view.
+The banner is an original illustrative SVG with a PNG export, not a wallet read.
+No application logic changed in this documentation refresh.
+The README architecture diagram parsed successfully with Mermaid 12.2.0.
+Relative file/image links and code fences passed checks across the eight root/docs
+Markdown files; `git diff --check` passed. The full application suites were not
+rerun for documentation-only changes; the application results above retain their
+original validation date.
+
 Local generated evidence is ignored by Git:
 
 - `artifacts/screenshots/`: manual production landing/dashboard captures.
@@ -122,6 +133,9 @@ profiles, RPC URLs, traces containing real notes, or credentials.
 
 ## Limitations and public-release gates
 
+- Vercel deployment was authorized on 2026-11-01. Creating the Git-linked project
+  failed with a repository admin/write-access error from Vercel. No deployment
+  ID, public app URL, or hosted-app verification is claimed.
 - Financial input is manual and browser-local, not encrypted or backed up.
 - One watched address, canonical devnet USDC, and a fixed 14-day horizon.
 - No wallet connection, receipt matching, transfers, automatic bill settlement,
