@@ -11,7 +11,7 @@ See what remains after bills and a buffer, without counting money you haven't re
 > No wallet connection, private keys, signatures, or transfers.
 > Devnet tokens have no monetary value. This is a planning tool, not financial advice.
 
-**[Open live demo →](https://afterbills-seven.vercel.app)** · **[Try the sample plan →](https://afterbills-seven.vercel.app/app?mode=sample)**
+**[Open live demo →](https://afterbills-seven.vercel.app)** · **[Try the sample plan →](https://afterbills-seven.vercel.app/app?mode=sample)** · **[Watch the 1-minute explainer →](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4)** · **[Presentation →](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx)**
 **Code:** [github.com/puri-adityakumar/afterbills](https://github.com/puri-adityakumar/afterbills).
 
 ## Why AfterBills?
@@ -263,7 +263,7 @@ files out of Git. Recreate the hosting-level API rate limit in any new project.
 - [x] Real finalized devnet USDC reads and explicit stale/error states
 - [x] Desktop/mobile tests, keyboard dialogs, and reduced-motion support
 - [x] Verified public Vercel deployment
-- [ ] Demo video and presentation, planned for a later step
+- [x] One-minute explainer video and a presentation (see [docs](docs/))
 - [ ] Freelancer interviews and usability validation
 - [ ] Verified incoming receipts and user-confirmed reconciliation
 - [ ] Export/import and additional planning horizons
@@ -281,6 +281,8 @@ Unchecked items are planned, not working features.
 | [UI specification](docs/UI_SPEC.md) | Layouts, forms, responsive behavior, and error states |
 | [Validation](docs/VALIDATION.md) | Actual test results, devnet evidence, and release gates |
 | [Research](research/RESEARCH.md) | Source register and product assumptions |
-| [Checkpoint](docs/CHECKPOINT.md) | Submission checklist and deferred video/deck outlines |
+| [Explainer video](docs/AfterBills-explainer.mp4) | One-minute walkthrough with Microsoft neural voiceover |
+| [Presentation](docs/AfterBills-presentation.pptx) | Ten-slide PowerPoint with speaker notes |
+| [Checkpoint](docs/CHECKPOINT.md) | Submission checklist and video/deck notes |
 
 Built for the **Best Consumer App on Solana** track.

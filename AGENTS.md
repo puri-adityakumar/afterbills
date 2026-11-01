@@ -12,7 +12,7 @@ The user has separately authorized committing and pushing this project to
 `https://github.com/puri-adityakumar/afterbills` on `main`. Do not force-push or
 overwrite existing remote history. The user has also authorized an AfterBills
 Vercel project and direct local-source CLI deployment, without requiring a
-GitHub integration. Demo video and presentation are deferred. Hackathon submission
+GitHub integration. A one-minute demo video and a presentation were later requested by the user and are stored in `docs/`. Hackathon submission
 remains unapproved.
 
 Local implementation, dependency installation, and bounded local tests are in

@@ -1,8 +1,8 @@
 # AfterBills · submission package
 
 Updated November 1, 2026. Copy the description below into **Submission Details**.
-The form has not been submitted. Demo video and presentation are deferred at the
-user's request.
+The form has not been submitted. A one-minute explainer video and a ten-slide
+presentation are included in this repository and listed below.
 
 ## Submission Details
 
@@ -55,7 +55,7 @@ there is no bank sync, automated bill settlement, or verified receipt matching.
 The code is published on GitHub, and a public devnet app is deployed on Vercel.
 The hosted sample, purchase preview, mobile layout, and a genuine finalized
 devnet API read have been checked. The snapshot endpoint also has a hosting-level
-rate limit. The demo video and presentation will follow later. Next steps include
+rate limit. A one-minute explainer video and a presentation are included in the repository. Next steps include
 freelancer usability testing, broader production hardening, verified incoming
 receipts, and user-confirmed reconciliation.
 
@@ -64,9 +64,9 @@ receipts, and user-confirmed reconciliation.
 | Form field | Value / status |
 |---|---|
 | Link to Code | https://github.com/puri-adityakumar/afterbills |
-| Link to Demo Video | Deferred, not recorded or uploaded |
+| Link to Demo Video | https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4 (about 1 minute, synthetic Microsoft neural voiceover; the checkpoint guidance mentions 2-4 minutes) |
 | Live Demo Link | https://afterbills-seven.vercel.app |
-| Link to Presentation | Deferred, not created or uploaded |
+| Link to Presentation | https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx (PowerPoint, 10 slides) |
 
 ## Short description
 

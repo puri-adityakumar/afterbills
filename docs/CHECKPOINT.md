@@ -21,9 +21,9 @@ claiming that the screenshot marks every field mandatory.
 |---|---|---|
 | Submission details | Problem, actual work, process, meaningful Solana use, limitations, next steps | Ready in [SUBMISSION.md](SUBMISSION.md); not submitted |
 | Code link | New AfterBills repository with actual code and setup README | [GitHub source repository](https://github.com/puri-adityakumar/afterbills) |
-| Demo video | 2-4 minutes showing sample vs real reads and working product | Deferred by the user; not recorded/uploaded |
+| Demo video | 2-4 minutes showing sample vs real reads and working product | [One-minute explainer](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4) built from the live app; shorter than the 2-4 minute guidance |
 | Live demo | Public working app, devnet + explicit sample mode | [Public app](https://afterbills-seven.vercel.app), deployed directly and checked without sign-in |
-| Presentation | Six-slide pitch with honest screenshots/status | Deferred by the user; outline only, not rendered/uploaded |
+| Presentation | Six-slide pitch with honest screenshots/status | [Ten-slide PowerPoint](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx) with real screenshots and speaker notes |
 
 Submit under **Best Consumer App on Solana**. Do not associate x402/Aurora merely
 because they were researched; their working integrations are not in this scope.
@@ -53,7 +53,7 @@ change and call it a blockchain settlement. Receipt matching is a later feature.
 | Production build | Exact build/lint/typecheck/e2e results | Build/lint/types pass; see current browser results |
 | Public app | User-authorized URL tested in a clean browser | Public landing, sample, purchase preview, 390px layout, and real hosted API read checked |
 | Code | User-authorized repository URL and accurate setup instructions | [GitHub repository](https://github.com/puri-adityakumar/afterbills), with setup README |
-| Recording/deck | Real artifact paths and accessible published links | Not created |
+| Recording/deck | Real artifact paths and accessible published links | `docs/AfterBills-explainer.mp4` and `docs/AfterBills-presentation.pptx`, published in the repository |
 
 Evidence must use synthetic financial labels or a user-approved test wallet.
 Do not publish private client names, invoices, bills, API keys, or device data.
@@ -64,8 +64,8 @@ Do not publish private client names, invoices, bills, API keys, or device data.
 
 Use [SUBMISSION.md](SUBMISSION.md), which includes the full implementation
 narrative, process, actual Solana integration, validation, and remaining limits.
-The source is published and the public Vercel app is working. Video and
-presentation are explicitly deferred. Do not describe those as complete.
+The source is published, the public Vercel app is working, and a one-minute
+explainer video and presentation are in `docs/`. Neither is a hackathon submission.
 
 ### Structure after implementation
 
@@ -104,9 +104,8 @@ before C7 passes.
 5. **Solana and trust**: read-only data flow, token identity, privacy, actual evidence.
 6. **Current status / next steps**: implemented vs planned, user-validation goals.
 
-This is a content outline, not a generated deck. When asked to produce slides,
-use the presentation skill and inspect the rendered output. Use the actual
-implemented interface, not fabricated product screenshots.
+This is the original outline. The delivered deck in `docs/AfterBills-presentation.pptx`
+expands it to ten slides, using screenshots of the implemented interface.
 
 ## 7. Scope cuts if the deadline gets tight
 
