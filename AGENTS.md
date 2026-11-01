@@ -10,7 +10,10 @@ inherited-model coding workers. Do not claim GLM was used.
 The local Git repository is initialized on `main`.
 The user has separately authorized committing and pushing this project to
 `https://github.com/puri-adityakumar/afterbills` on `main`. Do not force-push or
-overwrite existing remote history. Deployment and submission remain unapproved.
+overwrite existing remote history. The user has also authorized an AfterBills
+Vercel project and direct local-source CLI deployment, without requiring a
+GitHub integration. Demo video and presentation are deferred. Hackathon submission
+remains unapproved.
 
 Local implementation, dependency installation, and bounded local tests are in
 scope. Bind test servers to loopback only.

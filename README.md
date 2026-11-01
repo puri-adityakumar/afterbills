@@ -11,7 +11,7 @@ See what remains after bills and a buffer, without counting money you haven't re
 > No wallet connection, private keys, signatures, or transfers.
 > Devnet tokens have no monetary value. This is a planning tool, not financial advice.
 
-**Live demo:** pending Vercel repository authorization.
+**[Open live demo →](https://afterbills-seven.vercel.app)** · **[Try the sample plan →](https://afterbills-seven.vercel.app/app?mode=sample)**
 **Code:** [github.com/puri-adityakumar/afterbills](https://github.com/puri-adityakumar/afterbills).
 
 ## Why AfterBills?
@@ -188,16 +188,16 @@ tests/
 
 ## Validation
 
-Recorded local results, October 31, 2026:
+Recorded local and hosted results, October 31–November 1, 2026:
 
 | Check | Result |
 |---|---|
-| Unit and component tests | **285 passed**; one opt-in network test skipped by default |
-| Browser tests | **18 passed** across desktop and mobile Chromium |
-| Lint / TypeScript / production build | **Passed** |
-| Opt-in real devnet integration | **Passed separately**, including a complete API-route read |
+| Unit and component tests | **285 passed**, rerun November 1; one opt-in network test skipped by default |
+| Browser tests | **18 passed** across desktop/mobile Chromium on October 31; hosted sample/purchase/mobile smoke checks passed November 1 |
+| Lint / TypeScript / production build | **Passed**; direct Vercel production build also passed |
+| Real devnet integration | **Passed separately**, including local and publicly hosted API-route reads |
 | Automated accessibility | No axe violations on the sampled pages and settings dialog |
-| Production dependency audit | No vulnerabilities reported at the time of the check |
+| Production dependency audit | **Zero vulnerabilities**, rechecked November 1; development lint tooling has 16 moderate advisories |
 
 ```sh
 npm test
@@ -229,10 +229,31 @@ Mobile checks use Chromium viewports, not physical devices or Safari.
 - **Browser-local data.** Notes are not encrypted, authenticated, backed up, or synced.
   Use fictional financial labels when exploring or sharing the prototype.
 - **Bounded RPC.** Request validation, timeouts, same-origin checks, no-store responses,
-  and best-effort in-process limiting are implemented. Durable hosting-level abuse
-  controls remain a public-release gate.
-- **Prototype hosting.** Vercel deployment is authorized but currently blocked by its
-  GitHub repository-access check. No public app URL is claimed. Search indexing remains disabled.
+  and best-effort in-process limiting are implemented. The Vercel project also has
+  a scoped snapshot-API rate limit of 30 requests per IP per 60 seconds, counted per
+  region. These controls are not a guarantee against every form of abuse.
+- **Public prototype.** Hosted on Vercel by direct CLI upload, not a GitHub-linked
+  automatic deployment. Search indexing remains disabled. Broader CSP hardening,
+  financial-data security review, and operational monitoring are future release work.
+
+## Deployment
+
+The public devnet app is at **https://afterbills-seven.vercel.app**.
+It was deployed directly with Vercel CLI, without requiring a Vercel–GitHub
+repository connection. A GitHub push alone does **not** redeploy this app.
+
+For a direct deployment to your own Vercel project, use an authenticated CLI:
+
+```sh
+vercel link
+vercel deploy --prod
+```
+
+The existing AfterBills project uses the Next.js preset, `npm ci`, and
+`npm run build`. The public devnet RPC works without a provider secret.
+`.vercelignore` excludes environment files, local data, caches, tests, and
+documentation from the source upload. Keep `.vercel/` and all local environment
+files out of Git. Recreate the hosting-level API rate limit in any new project.
 
 ## Roadmap
 
@@ -241,7 +262,7 @@ Mobile checks use Chromium viewports, not physical devices or Safari.
 - [x] Purchase preview and separate seven-day payment-delay scenario
 - [x] Real finalized devnet USDC reads and explicit stale/error states
 - [x] Desktop/mobile tests, keyboard dialogs, and reduced-motion support
-- [ ] Verified public Vercel deployment
+- [x] Verified public Vercel deployment
 - [ ] Demo video and presentation, planned for a later step
 - [ ] Freelancer interviews and usability validation
 - [ ] Verified incoming receipts and user-confirmed reconciliation

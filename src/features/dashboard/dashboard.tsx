@@ -25,9 +25,9 @@ export function Dashboard({ model: m, actions: a }: DashboardProps) {
         <nav className="dashboard-navigation" aria-label="Plan sections"><a href="#overview" aria-current="page">Overview</a><a href="#bills">Bills</a><a href="#invoices">Expected invoices</a></nav>
         <button className="button-quiet settings-button" onClick={a.onOpenSettings} aria-label="Open plan settings"><Settings2 size={18} aria-hidden="true" /><span>Settings</span></button>
       </header>
-      <div className={`mode-banner ${m.mode === "sample" ? "mode-sample" : ""}`}>
+      <section aria-label="Plan mode" className={`mode-banner ${m.mode === "sample" ? "mode-sample" : ""}`}>
         <div className="shell mode-banner-inner"><p><span className="status-dot" /><strong>{m.mode === "sample" ? "Sample plan" : "Solana devnet"}</strong><span className="banner-divider" />{m.mode === "sample" ? "Fictional data · Fixed November 1 to 14, 2026" : "Test money · No real value"}</p><button className="banner-action" onClick={a.onWatchAddress}>{m.mode === "sample" ? "Watch your address" : "Change address"}<ArrowUpRight size={15} aria-hidden="true" /></button></div>
-      </div>
+      </section>
       <main id="main" className="dashboard-main shell">
         <div className="overview-heading" id="overview"><div><p className="eyebrow">YOUR MONEY, WITH A PLAN</p><h1>A clearer kind of balance.</h1></div><div className="window-label"><CalendarDays size={17} aria-hidden="true" /><span>{m.windowLabel}<small>14-day plan · {m.timezone}</small></span></div></div>
         <div className="observation-bar">

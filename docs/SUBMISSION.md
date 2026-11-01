@@ -52,10 +52,12 @@ private keys or signatures and performs no transfers. Financial labels stay in
 browser storage, which is not encrypted, backed up, or synced; public-address
 lookups reach the hosting and RPC infrastructure. Commitments are manual, and
 there is no bank sync, automated bill settlement, or verified receipt matching.
-The code is published on GitHub. Public Vercel deployment is pending repository
-authorization; the demo video and presentation will follow later. Next steps
-include freelancer usability testing, durable hosting-level abuse controls,
-verified incoming receipts, and user-confirmed reconciliation.
+The code is published on GitHub, and a public devnet app is deployed on Vercel.
+The hosted sample, purchase preview, mobile layout, and a genuine finalized
+devnet API read have been checked. The snapshot endpoint also has a hosting-level
+rate limit. The demo video and presentation will follow later. Next steps include
+freelancer usability testing, broader production hardening, verified incoming
+receipts, and user-confirmed reconciliation.
 
 ## Form links
 
@@ -63,7 +65,7 @@ verified incoming receipts, and user-confirmed reconciliation.
 |---|---|
 | Link to Code | https://github.com/puri-adityakumar/afterbills |
 | Link to Demo Video | Deferred, not recorded or uploaded |
-| Live Demo Link | Pending Vercel GitHub repository authorization; no URL yet |
+| Live Demo Link | https://afterbills-seven.vercel.app |
 | Link to Presentation | Deferred, not created or uploaded |
 
 ## Short description
@@ -75,8 +77,10 @@ payments without counting unpaid invoices as money you already have.
 ## Evidence and scope
 
 - Working source: [GitHub](https://github.com/puri-adityakumar/afterbills).
+- Public app: [AfterBills](https://afterbills-seven.vercel.app).
+- Direct sample: [Try a sample plan](https://afterbills-seven.vercel.app/app?mode=sample).
 - Product screenshots: [README product tour](../README.md#product-tour).
 - Recorded checks and real devnet-read details: [VALIDATION.md](VALIDATION.md).
 - Target track: **Best Consumer App on Solana**.
 - No mainnet use, user traction, interviews, official jury score, automatic
-  reconciliation, public app deployment, or completed submission is claimed.
+  reconciliation, or completed submission is claimed.

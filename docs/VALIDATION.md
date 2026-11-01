@@ -3,7 +3,8 @@
 Local implementation validated on 2026-10-31. Code repository:
 [puri-adityakumar/afterbills](https://github.com/puri-adityakumar/afterbills),
 with publication separately authorized by the user on 2026-11-01.
-No public app deployment, recording, rendered deck, transfer, or wallet creation.
+Public direct-source Vercel deployment followed on 2026-11-01; see the hosted
+checks below. No recording, rendered deck, transfer, or wallet creation.
 
 ## Source checks
 
@@ -77,9 +78,68 @@ The banner is an original illustrative SVG with a PNG export, not a wallet read.
 No application logic changed in this documentation refresh.
 The README architecture diagram parsed successfully with Mermaid 12.2.0.
 Relative file/image links and code fences passed checks across the eight root/docs
-Markdown files; `git diff --check` passed. The full application suites were not
-rerun for documentation-only changes; the application results above retain their
-original validation date.
+Markdown files; `git diff --check` passed. The initial documentation-only commit
+preserved prior application results. The subsequent deployment checks below
+include a fresh unit/component, lint, and typecheck run; the 18-test local browser
+suite retains its October 31 validation date.
+
+## Public deployment · 2026-11-01
+
+Live app: **https://afterbills-seven.vercel.app**.
+The user explicitly authorized direct CLI deployment. Vercel CLI 65.9.0 used the
+saved local login and uploaded the application to the standalone AfterBills
+project. GitHub repository linking is not required and automatic Git deployments
+are not configured. The hosted production build and TypeScript compilation passed.
+No plan upgrade, paid RPC credential, wallet, funding, or transaction was needed.
+Final deployment: `dpl_FMovo4R1FeXKpeexAw3y3QKYCaFv`, state `READY`.
+
+Hosted checks passed without a Vercel sign-in:
+
+- Landing HTTP 200; sample dashboard displays the fictional funded 280 USDC.
+- A 180 USDC purchase preview shows 100 remaining and a 7.14 daily pace.
+- At 390px, sample labeling remains visible and document width is 390px, with
+  no horizontal overflow.
+- The live-address browser flow reads the public reference address successfully,
+  showing 1,033.64 USDC with finalized slot 517,373,532 at 04:23:35 UTC.
+- Invalid-address POST returns 400; a foreign Origin returns 403.
+- A genuine finalized devnet POST returns 200 and `Cache-Control: no-store`.
+- `nosniff`, frame denial, strict-origin referrer policy, and disabled
+  camera/microphone/geolocation headers are present.
+
+Hosted devnet read, using the same well-known public system-program address
+documented above, not a controlled or funded test wallet:
+
+```text
+Observed at: 2026-11-01T04:21:03.508Z
+Slot: 517372900
+Network: devnet
+Usable balance units: 1033647698
+HTTP: 200
+Cache-Control: no-store
+```
+
+The initial hosted axe scan identified a mode-banner landmark issue. The banner
+was changed to a named `Plan mode` section, and the existing UI tests now assert
+the landmark in both sample and live modes. After that change, `npm test` passed
+285 tests (one opt-in network test skipped), and lint/typecheck passed again.
+The fix was redeployed and the public sample rescanned: zero violations in
+embedded axe 4.12.1, with one incomplete rule covering two decorative minus signs.
+The two decorative deduction symbols require manual contrast review in the older
+embedded axe engine; their previously measured contrast is 6.26:1.
+
+The AfterBills-only Vercel WAF rule limits `/api/solana/snapshot` to 30 requests per
+IP per 60-second fixed window. WAF counters are per region, not a universal
+cross-region quota. The in-process limiter remains defense in depth. The Hobby
+plan includes one such rule and 1,000,000 allowed requests; no plan was upgraded.
+The published project firewall reports one active rule and no pending changes
+at publication. Other projects and team-wide firewall settings were not changed.
+
+Dependency audit on 2026-11-01: `npm audit --omit=dev` reports zero vulnerabilities.
+The full development audit reports 16 moderate advisories in the ESLint/minimatch
+tooling tree. The suggested automatic fixes include incompatible major downgrades
+and were not applied. These remain maintenance work, not a clean full-audit claim.
+
+## Earlier local visual evidence
 
 Local generated evidence is ignored by Git:
 
@@ -133,19 +193,19 @@ profiles, RPC URLs, traces containing real notes, or credentials.
 
 ## Limitations and public-release gates
 
-- Vercel deployment was authorized on 2026-11-01. Creating the Git-linked project
-  failed with a repository admin/write-access error from Vercel. No deployment
-  ID, public app URL, or hosted-app verification is claimed.
+- The first Git-linked project request failed with a Vercel repository-access
+  error. The user then chose direct CLI upload, which succeeded. The live project
+  is not connected to GitHub; source pushes do not automatically update the app.
 - Financial input is manual and browser-local, not encrypted or backed up.
 - One watched address, canonical devnet USDC, and a fixed 14-day horizon.
 - No wallet connection, receipt matching, transfers, automatic bill settlement,
   partial reconciliation, recurring rules, accounts, or multi-device sync.
 - RPC refresh is explicit. After 60 seconds or a failed refresh, the last success
   is a stale reference, never a replacement zero or a fresh recommendation.
-- In-process API limiting is non-durable. Public hosting requires platform-level
-  abuse/cost limits and a reviewed provider/origin/CSP configuration.
-- Unpublished metadata intentionally uses `noindex` and disallows crawling.
-  Public canonical URL, sitemap, share artwork, deployment and external links
-  must reflect real resources, not invented links.
+- In-process API limiting is non-durable; the deployed snapshot API additionally
+  uses the scoped Vercel WAF rule described above. Production financial use still
+  needs broader provider/CSP/security review, monitoring, and operational controls.
+- The public prototype intentionally keeps `noindex` and disallows crawling.
+  A production canonical/sitemap/social-metadata package is not claimed.
 - No interviews, traction, official Awwwards score, actual mobile hardware/Safari
   testing, real receipt verification, or production readiness is claimed.

@@ -49,6 +49,7 @@ describe("AfterBills presentation", () => {
     expect(within(funded).getByText(/All amounts in USDC\. Expected invoices are not included\./)).toBeVisible();
     expect(screen.getByText("Expected, not received")).toBeVisible();
     expect(screen.getByText(/Fictional data/)).toBeVisible();
+    expect(within(screen.getByRole("region", { name: "Plan mode" })).getByText("Sample plan")).toBeVisible();
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
   });
   it("displays exact zero without a reassuring daily suggestion", () => {
@@ -144,6 +145,7 @@ describe("AfterBills presentation", () => {
   it("labels live devnet and shows actual address and asset explorer links", () => {
     render(<Dashboard model={model({ mode: "live", owner: "11111111111111111111111111111111" })} actions={actions()} />);
     expect(screen.getByText(/Test money · No real value/)).toBeVisible();
+    expect(within(screen.getByRole("region", { name: "Plan mode" })).getByText("Solana devnet")).toBeVisible();
     expect(screen.queryByText("Sample plan")).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: /111111…1111/ })).toHaveAttribute("href", "https://explorer.solana.com/address/11111111111111111111111111111111?cluster=devnet");
     expect(screen.getByRole("link", { name: "Devnet USDC" })).toHaveAttribute("href", expect.stringContaining("cluster=devnet"));

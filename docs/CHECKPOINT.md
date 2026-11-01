@@ -1,9 +1,10 @@
 # AfterBills checkpoint package
 
 Checkpoint checklist, updated 2026-11-01. Working app built and tested; GitHub
-`main` is published. The user authorized Vercel deployment, but linking the
-repository was rejected by Vercel's repository-access check. No public app
-deployment or hackathon submission is claimed. See `VALIDATION.md` for evidence
+`main` is published. The user authorized Vercel deployment and explicitly chose
+direct CLI upload after GitHub linking failed. The public app is available at
+https://afterbills-seven.vercel.app. No hackathon submission is claimed.
+See `VALIDATION.md` for evidence
 and `SUBMISSION.md` for the paste-ready description and current form links.
 
 ## 1. Deadline and form
@@ -21,7 +22,7 @@ claiming that the screenshot marks every field mandatory.
 | Submission details | Problem, actual work, process, meaningful Solana use, limitations, next steps | Ready in [SUBMISSION.md](SUBMISSION.md); not submitted |
 | Code link | New AfterBills repository with actual code and setup README | [GitHub source repository](https://github.com/puri-adityakumar/afterbills) |
 | Demo video | 2-4 minutes showing sample vs real reads and working product | Deferred by the user; not recorded/uploaded |
-| Live demo | Public working app, devnet + explicit sample mode | Deployment authorized; Vercel GitHub repository access blocks project creation |
+| Live demo | Public working app, devnet + explicit sample mode | [Public app](https://afterbills-seven.vercel.app), deployed directly and checked without sign-in |
 | Presentation | Six-slide pitch with honest screenshots/status | Deferred by the user; outline only, not rendered/uploaded |
 
 Submit under **Best Consumer App on Solana**. Do not associate x402/Aurora merely
@@ -50,7 +51,7 @@ change and call it a blockchain settlement. Receipt matching is a later feature.
 | Failure behavior | Stale/timeout/zero screenshots and corresponding tests | Core browser flows pass; expanded results in `VALIDATION.md` |
 | Responsive UX | Desktop and 390px screenshots; keyboard/reduced-motion checks | Production Chromium desktop/mobile captures and checks |
 | Production build | Exact build/lint/typecheck/e2e results | Build/lint/types pass; see current browser results |
-| Public app | User-authorized URL tested in a clean browser | Authorized, blocked by Vercel repository access; no URL |
+| Public app | User-authorized URL tested in a clean browser | Public landing, sample, purchase preview, 390px layout, and real hosted API read checked |
 | Code | User-authorized repository URL and accurate setup instructions | [GitHub repository](https://github.com/puri-adityakumar/afterbills), with setup README |
 | Recording/deck | Real artifact paths and accessible published links | Not created |
 
@@ -63,8 +64,8 @@ Do not publish private client names, invoices, bills, API keys, or device data.
 
 Use [SUBMISSION.md](SUBMISSION.md), which includes the full implementation
 narrative, process, actual Solana integration, validation, and remaining limits.
-The source is published. Public Vercel deployment is authorized but blocked;
-video and presentation are explicitly deferred. Do not describe these as complete.
+The source is published and the public Vercel app is working. Video and
+presentation are explicitly deferred. Do not describe those as complete.
 
 ### Structure after implementation
 
