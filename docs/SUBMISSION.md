@@ -64,7 +64,7 @@ receipts, and user-confirmed reconciliation.
 | Form field | Value / status |
 |---|---|
 | Link to Code | https://github.com/puri-adityakumar/afterbills |
-| Link to Demo Video | https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4 (about 1 minute, synthetic Microsoft neural voiceover; the checkpoint guidance mentions 2-4 minutes) |
+| Link to Demo Video | https://vimeo.com/1241928130 (about 1 minute, synthetic Microsoft neural voiceover; the checkpoint guidance mentions 2-4 minutes) |
 | Live Demo Link | https://afterbills-seven.vercel.app |
 | Link to Presentation | https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx (PowerPoint, 10 slides) |
 

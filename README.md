@@ -11,8 +11,12 @@ See what remains after bills and a buffer, without counting money you haven't re
 > No wallet connection, private keys, signatures, or transfers.
 > Devnet tokens have no monetary value. This is a planning tool, not financial advice.
 
-**[Open live demo →](https://afterbills-seven.vercel.app)** · **[Try the sample plan →](https://afterbills-seven.vercel.app/app?mode=sample)** · **[Watch the 1-minute explainer →](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4)** · **[Presentation →](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx)**
+**[Open live demo →](https://afterbills-seven.vercel.app)** · **[Try the sample plan →](https://afterbills-seven.vercel.app/app?mode=sample)** · **[Watch the 1-minute explainer →](https://vimeo.com/1241928130)** · **[Presentation →](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx)**
 **Code:** [github.com/puri-adityakumar/afterbills](https://github.com/puri-adityakumar/afterbills).
+
+[![Watch the AfterBills 1-minute explainer on Vimeo](docs/assets/video-poster.png)](https://vimeo.com/1241928130)
+
+*One-minute explainer with a synthetic Microsoft neural voiceover. Also available as [an MP4 in this repository](docs/AfterBills-explainer.mp4).*
 
 ## Why AfterBills?
 

@@ -21,7 +21,7 @@ claiming that the screenshot marks every field mandatory.
 |---|---|---|
 | Submission details | Problem, actual work, process, meaningful Solana use, limitations, next steps | Ready in [SUBMISSION.md](SUBMISSION.md); not submitted |
 | Code link | New AfterBills repository with actual code and setup README | [GitHub source repository](https://github.com/puri-adityakumar/afterbills) |
-| Demo video | 2-4 minutes showing sample vs real reads and working product | [One-minute explainer](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-explainer.mp4) built from the live app; shorter than the 2-4 minute guidance |
+| Demo video | 2-4 minutes showing sample vs real reads and working product | [One-minute explainer](https://vimeo.com/1241928130) built from the live app; shorter than the 2-4 minute guidance |
 | Live demo | Public working app, devnet + explicit sample mode | [Public app](https://afterbills-seven.vercel.app), deployed directly and checked without sign-in |
 | Presentation | Six-slide pitch with honest screenshots/status | [Ten-slide PowerPoint](https://github.com/puri-adityakumar/afterbills/blob/main/docs/AfterBills-presentation.pptx) with real screenshots and speaker notes |
 
