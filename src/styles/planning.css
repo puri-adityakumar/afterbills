@@ -1,0 +1,31 @@
+.plan-dialog{padding:0;border:1px solid #cfd8dc;border-radius:16px;width:min(500px,calc(100vw - 32px));max-height:calc(100dvh - 48px);color:#17252c;background:#fff;box-shadow:0 24px 100px #17252c26}
+.plan-dialog::backdrop{background:#17252c65;backdrop-filter:blur(4px)}
+.plan-dialog-content{padding:28px;overflow:auto}
+.plan-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.plan-dialog-heading h2{font-size:24px;letter-spacing:-.035em;line-height:1.2;margin:0}
+.plan-dialog-description{font-size:14px;line-height:1.6;color:#52636b;margin:12px 0 24px}
+.plan-form{display:flex;flex-direction:column;gap:20px}
+.plan-form .field{display:flex;flex-direction:column;gap:8px}
+.plan-form label{font-size:14px;font-weight:600}
+.plan-form .input{width:100%;border:1px solid #6c7d86;border-radius:8px;min-height:48px;padding:11px 14px;background:#fff;color:#17252c;font:inherit}
+.plan-form .input[aria-invalid=true]{border-color:#a33b32}
+.form-error{font-size:13px;line-height:1.5;color:#a33b32;margin:0}
+.form-note{font-size:13px;line-height:1.6;color:#52636b;margin:0}
+.form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:12px;flex-wrap:wrap}
+.privacy-note{font-size:13px;line-height:1.6;color:#52636b;background:#f5f8fa;padding:16px;border-radius:8px}
+.privacy-note strong{color:#17252c}
+.privacy-note p{margin:8px 0 0}
+.break-address{overflow-wrap:anywhere;font-family:monospace;font-size:12px}
+.address-input{font-size:14px!important}
+.button-danger{background:#a33b32!important}
+.icon-button{display:inline-grid;place-items:center;width:44px;height:44px;min-width:44px;border:1px solid transparent;background:transparent;border-radius:8px;color:inherit;cursor:pointer}
+.icon-button:hover{background:#eef2f5}
+.icon-button:active{transform:translateY(1px)}
+.boot-state{max-width:1200px;min-height:70vh;margin:0 auto;padding:100px 24px;font-family:"Instrument Sans Variable",sans-serif;color:#17252c}
+.boot-state p{color:#52636b}
+.exact-units{font-size:12px;margin:12px 0}
+.exact-units>div{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:6px 0}
+.exact-units dd{font-variant-numeric:tabular-nums;overflow-wrap:anywhere;text-align:right}
+.input:focus-visible,.icon-button:focus-visible{outline:2px solid #224b8f;outline-offset:3px}
+@media(max-width:600px){.plan-dialog-content{padding:24px 20px}.form-actions>*{flex:1}.plan-dialog-heading h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.icon-button:active{transform:none}.brand:hover .brand-symbol{translate:none}}
